@@ -1,0 +1,450 @@
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+<script type="text/javascript">google.load("jquery", "1.3.2");</script>
+
+<style type="text/css">
+  #bannerimage {
+    width: 100%;
+    background-image: url("./resources/images/toy_brt.png");
+    height: 300px;
+    background-color: rgb(255, 255, 255);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+    body {
+        font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+        font-weight:300;
+        font-size:18px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 1100px;
+    }
+
+    h1, h2 {
+        font-weight:300;
+    }
+
+    .disclaimerbox {
+        background-color: #eee;
+        border: 1px solid #eeeeee;
+        border-radius: 10px ;
+        -moz-border-radius: 10px ;
+        -webkit-border-radius: 10px ;
+        padding: 20px;
+    }
+
+    video.header-vid {
+        height: 140px;
+        border: 1px solid black;
+        border-radius: 10px ;
+        -moz-border-radius: 10px ;
+        -webkit-border-radius: 10px ;
+    }
+
+    img.header-img {
+        height: 140px;
+        border: 1px solid black;
+        border-radius: 10px ;
+        -moz-border-radius: 10px ;
+        -webkit-border-radius: 10px ;
+    }
+
+    img.rounded {
+        border: 1px solid #eeeeee;
+        border-radius: 10px ;
+        -moz-border-radius: 10px ;
+        -webkit-border-radius: 10px ;
+    }
+
+    a:link,a:visited
+    {
+        color: #1367a7;
+        text-decoration: none;
+    }
+    a:hover {
+        color: #208799;
+    }
+
+    td.dl-link {
+        height: 160px;
+        text-align: center;
+        font-size: 22px;
+    }
+
+    .layered-paper-big { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+        box-shadow:
+                0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+                5px 5px 0 0px #fff, /* The second layer */
+                5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+                10px 10px 0 0px #fff, /* The third layer */
+                10px 10px 1px 1px rgba(0,0,0,0.35), /* The third layer shadow */
+                15px 15px 0 0px #fff, /* The fourth layer */
+                15px 15px 1px 1px rgba(0,0,0,0.35), /* The fourth layer shadow */
+                20px 20px 0 0px #fff, /* The fifth layer */
+                20px 20px 1px 1px rgba(0,0,0,0.35), /* The fifth layer shadow */
+                25px 25px 0 0px #fff, /* The fifth layer */
+                25px 25px 1px 1px rgba(0,0,0,0.35); /* The fifth layer shadow */
+        margin-left: 10px;
+        margin-right: 45px;
+    }
+
+
+    .layered-paper { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+        box-shadow:
+                0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+                5px 5px 0 0px #fff, /* The second layer */
+                5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+                10px 10px 0 0px #fff, /* The third layer */
+                10px 10px 1px 1px rgba(0,0,0,0.35); /* The third layer shadow */
+        margin-top: 5px;
+        margin-left: 10px;
+        margin-right: 30px;
+        margin-bottom: 5px;
+    }
+
+    .vert-cent {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    hr
+    {
+        border: 0;
+        height: 1.5px;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    }
+</style>
+
+<html>
+  <head>
+        <title>Parameter-Conditioned Reachable Sets for Updating Safety Assurances Online</title>
+        <meta property="og:title" content="Factored 3D" />
+  </head>
+
+  <body>
+    <div id="bannerimage"></div>
+    <br>
+    <center>
+    <span style="font-size:42px">Parameter-Conditioned Reachable Sets for Updating Safety Assurances Online</span>
+    </center>
+
+    <br><br>
+      <table align=center width=900px>
+       <tr>
+        <td align=center width=100px>
+        <center>
+        <span style="font-size:20px">Javier Borquez*</span>
+        </center>
+        </td>
+
+        <td align=center width=100px>
+        <center>
+        <span style="font-size:20px">Kensuke Nakamura**</span>
+        </center>
+        </td>
+	       
+        <td align=center width=100px>
+        <center>
+        <span style="font-size:20px"><a href="https://smlbansal.github.io/">Somil Bansal*</a></span>
+        </center>
+        </td>
+
+
+     </tr>
+    </table>
+
+    <br>
+    <table align=center width=700px>
+       <tr>
+        <td align=center width=100px>
+        <center>
+        <span>*University of Southern California   **Princeton University</span>
+        </center>
+        </td>	       
+      </tr>
+    </table>
+    <br>
+    <center>
+      <span style="font-size:20px">Presented at -------</span>
+      </center>
+    <br>
+
+    <table align=center width=500px>
+      <tr>
+        <td align=center width=100px><center><span style="font-size:20px">
+              <a href="https://arxiv.org/pdf/2209.14976.pdf">[pdf]</a></span>
+            </center></td>
+
+            <td align=center width=100px><center><span style="font-size:20px">
+              <a href="./resources/bibtex.bib">[bibtex]</a></span>
+            </center></td>
+
+            <td align=center width=100px><center><span style="font-size:20px">
+              <a href="https://github.com/sia-lab-git/param_cond_reachability">[source code]</a></span>
+          </center></td>            
+      </tr>
+    </table>    
+
+    <br>
+  <!--  
+  <table align=center>
+              <tr>
+                  <td width=1000>
+                    <center>
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/odl88srx2iI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                  </center>
+                  </td>
+              </tr>
+            </table>
+            -->
+            <br>
+
+            <br>
+          <hr>
+    <center><h1>Abstract</h1></center>
+
+            <p align='justify'>Hamilton-Jacobi (HJ) reachability analysis is a powerful tool for analyzing the safety of autonomous systems. 
+However, the provided safety assurances are often predicated on the assumption that once deployed, the system or its environment does not evolve. 
+Online, however, an autonomous system might experience changes in system dynamics, control authority, external disturbances, and/or the surrounding environment, requiring updated safety assurances. 
+Rather than restarting the safety analysis from scratch, which can be time-consuming and often intractable to perform online, we propose to compute parameter-conditioned reachable sets.
+Assuming expected system and environment changes can be parameterized, we treat these parameters as virtual states in the system and leverage recent advances in high-dimensional reachability analysis to solve the corresponding reachability problem offline.
+This results in a family of reachable sets that is parameterized by the environment and system factors.
+Online, as these factors change, the system can simply query the corresponding safety function from this family to ensure system safety, enabling a real-time update of the safety assurances.
+Through various simulation studies, we demonstrate the capability of our approach in maintaining system safety despite the system and environment evolution.</p>
+<br>
+<br>
+<hr>
+        <center><h1>Motivation</h1></center>
+        <p align='justify'>Autonomous systems generally need to operate in contexts that change, making it challenging to assess the system's safety at any given time. Updating the safety guarantees is often time-consuming and thus impractical for online use.
+        </p>          
+        <table align=center width=900px>
+            <tr>
+              <td width=640px>
+                <center>
+                    <a href="./resources/images/rocket.gif"><img src ="./resources/images/rocket.gif"></img></href></a><br> 
+                </center>
+              </td>
+            </tr>              
+        </table>
+
+        <p align='justify'>We propose an approach to solve this problem by using parameter-conditioned reachable sets.  The possible changes in the environment are parametrized and used as additional states in the system's dynamics, which we call virtual states.  During online operation, both regular and virtual states of the system are used to directly evaluate the safety conditions of the system without needing to recalculate the solutions for the HJI-PDE. 
+        </p>
+
+          <br>
+          <br>
+          <hr>
+          <center><h1>Main Idea</h1></center>
+          <p align='justify'>To the system's dynamics, an additional state used to model the possible evolutions of the environment is added with zero dynamics. This new extended state can be used to evaluate the system's safety condition, assuming that we have a solution for the HJ reachability problem this extended system poses.       
+          </p>
+          <table align=center width=700px>
+            <tr>
+                <td width=640px>
+                  <center>
+                      <a href="./resources/images/main_idea.png"><img src ="./resources/images/main_idea.png"></img></href></a><br> <!-- ./resources/images/results_simulation.png -->
+                </center>
+                </td>
+              </tr>
+              <tr>
+            <td width=640px>
+              <center>
+                  <span style="font-size:14px"><i> <span style="font-weight:bold">
+                  </span>
+</center>
+            </td>
+            </tr>
+        </table>
+        <p align='justify'>Then, existing reachability frameworks are used to solve this higher-dimensional reachability problem.
+
+          Typically such an approach would not be recommended as solving HJI-VI involves computing the value function over a grid representing a discretization of state space and time, which results in an exponential scaling complexity in computation and memory.
+          
+          To overcome this computational challenge, the <a href="https://arxiv.org/pdf/2011.02082.pdf">DeepReach</a> framework is leveraged as its deep learning-based approach is agnostic to grid resolution. The memory required generally scales with the underlying value function complexity, independent of the spatial resolution.
+        </p>
+
+          <br>
+          <hr>
+          <br>
+
+          <center><h1>Simulation Results</h1></center>
+
+        <br>
+        <br>
+        <center><h2>Air 3D</h2></center>        
+        <p align='justify'>We consider the two-vehicle collision avoidance problem where both agents move at the same constant speed and with input corresponding to their angular velocity. 
+
+          In this case, the input of the pursuer vehicle is modeled as the disturbance in the system. 
+          Moreover, the control input is the evader angular velocity, which is bounded to an interval parametrized by <var>&beta;<sub>U</sub></var> such that they can change online.
+          Intuitively, a larger <var>&beta;<sub>U</sub> corresponds to an evader with high maneuverability, whereas a smaller value corresponds to a diminished control authority.
+        </p>
+        <p align='justify'>
+          The BRT for this collision set corresponds to all states from which the pursuer can drive the system trajectory into collision despite optimal efforts of the evader to avoid a collision.
+          For example, we consider the situation where the evader moves with a nominal control authority trying to reach the green region while avoiding collision with the pursuer. 
+          Nominal operation of the system is interrupted due to an ''engine fail'' for the evader at <var>t<sub>0</sub></var> drastically limiting the evader control authority until it is repaired at time <var>t<sub>0</sub></var> at which the system returns to the nominal control authority.
+          We will compare the results over this scenario for a parameter conditioned controller and a regular nominal controller.
+        </p>
+
+        <p align='justify'>
+          
+        </p>
+  
+
+        <table align=center width=900px>
+          <tr>
+              <td width=640px>
+                <center>
+                    <a href="resources\images\air3d_p1d.gif"><img src ="resources\images\air3d_p1d.gif"></img></href></a><br> 
+              </center>
+              </td>
+            </tr>
+            <tr>
+          <td width=640px>
+            <center>
+              <p align='justify'> <b>(Top)</b> BRT slices in relative coordinates before, during, and after the engine failure. 
+                  The nominal model fails to consider the growth in the unsafe states (light blue region), ultimately leading to a collision. 
+                  <b>(Bottom left)</b> Trajectory in absolute coordinates for parameter conditioned controller, the collision was closely avoided.
+                  <b>(Bottom right)</b> Trajectory in absolute coordinates for nominal safety controller, leads to collision between the vehicles.
+              </p>
+          </td>
+          </tr>
+      </table>
+      <br>
+      <br>
+
+      <center><h2>Rocket Landing</h2></center>        
+      <p align='justify'>
+        This scenario mimics the situation where the rocket needs to land on an off-shore landing pad that might drift because of the ocean currents.
+                
+        The augmented system, in this case, is a 7D system (6 states and 1 parameter). We compute this 7D parameter-conditioned reachable set using DeepReach.
+        Note that computing such 7D reachable sets are generally infeasible for the traditional HJ reachability methods, which are <a href="https://ieeexplore.ieee.org/abstract/document/8263977?casa_token=pkstXyKt3IUAAAAA:jb82pOANWkmmWZ469tPD2a82xRYHEbK7bqEi1AfSF8cUa-HsFLb9RdxBZq2ibkgVukkw4Iw42w/">mostly limited to 6D systems</a>.
+                
+        
+      </p>
+      <p align='justify'>
+        To demonstrate the adaptability of the obtained value function, we consider two different cases: (i) a nominal safety controller that does not account for the dependency of the value function on the changing parameter; (ii) an adaptive safety controller that leverages parameter-conditioned value function to account for the movement of the target set by constantly sampling the parameter <var>&beta;<sub>L</sub></var> and activating the corresponding safety controller.
+        
+        The parameter-conditioned safety controller (the orange trajectory) constantly adjusts the horizontal thrust of the rocket with the shift in the position of the landing pad, ultimately enabling a successful landing. 
+        On the other hand, the nominal safety controller (the gray trajectory) fails to account for these movements and misses the landing pad.
+
+      </p>
+
+      <p align='justify'>
+        
+      </p>
+
+
+      <table align=center width=900px>
+        <tr>
+            <td width=640px>
+              <center>
+                  <a href="resources\images\rocket_comparison_crop.gif"><img src ="resources\images\rocket_comparison_crop.gif"></img></href></a><br> 
+            </center>
+            </td>
+          </tr>
+          <tr>
+        <td width=640px>
+          <center>
+            <p align='justify'> Animated trajectories for roket landing using: (Gray) a nominal safety controller; (Orange) an adaptive parameter-conditioned safety controller.
+        
+            </p>
+        </td>
+        </tr>
+    </table>
+  
+
+    <center><h2>Human Intertaction</h2></center>        
+      <p align='justify'>
+        This example considers a case where a robot and the human both aim to reach their respective goals while the robot tries to avoid collision with the human.
+        To achieve this the future human states are characterized by the set of states that can be occupied by the human over some time horizon T, defined as the Forward Reachable Tube (FRT).
+
+        In general, the FRT can be overly conservative so to restrict the possible future actions of the human and, consequently, the growth of the FRT a predictive model is considered.
+
+        Intuitively, when model confidence is high, we are certain that the human is moving directly towards its goal, leading to a much smaller FRT. On the other hand, when the model confidence is low, we are unsure about the human’s future actions.   
+      </p>
+      <p align='justify'>
+        As the human takes each action, the belief on intention of movement is considered as a online changing parameter.
+        The usefulness of this method is shown in the following example. Here the robot under nominal circumstances plans to take the gray trajectory, but there is an obstacle in the environment not modeled by the robot. When the human deviates from its optimal path to the goal (in order to avoid the obstacle), the robot model of the human cannot explain this motion, and the model confidence is dropped. This results in an update in the perceived human FRT, which can now be performed online due to its parameter-conditioned nature, adjusting the robot trajectory to swerve right to avoid any collision with the human or the obstacle.      </p>
+
+        <table align=center width=480px>
+          <tr>
+              <td width=240px>
+                <center>
+                  <a href="resources\images\human_robot_traj3.png"><img src ="resources\images\human_robot_traj3.png"></img></href></a><br>     
+              </center>
+              </td>
+            </tr>
+            <tr>
+          <td width=240px>
+            <center>
+              <p align='justify'> 
+                Trajectories for the human robot interaction whith a controller modeled as a confidence-parameterized FRT.
+              </p>
+          </td>
+          </tr>
+      </table>
+    
+
+
+    <center><h2>Three-Vehicle Collision Avoidance</h2></center>        
+    <p align='justify'>
+      To test the proposed method in high-dimensional scenarios, the following three-vehicle collision avoidance problem is considered: we have two evaders (<var>e<sub>1</sub></var> and <var>e<sub>2</sub></var>) and one pursuer (<var>p</var>), all three with 3D dynamics, leading to a 9D system in the joint state space of the evaders and the pursuer.
+      The pursuer here represents the adversarial agent that tries to steer evaders to collide either with the pursuer or with each other; evaders, on the other hand, try to avoid the collision.    
+      We consider a situation where the pursuer finds evaders of different sizes as it traverses its environment, which implies that the relative collision distance between each pair of vehicles might change online. 
+      This pairwise collision distance defines a parameter triplet which accounts for three additional ``virtual" states, resulting in a 12D system overall.   
+    </p>
+    <p align='justify'> 
+      The following figure illustrates slices of the obtained BRT for a particular position and orientation of the two evaders from the point of view of an incoming pursuer in the orientation shown by the gray plane in the bottom right of each slice. 
+      The shaded region represents the set of all starting positions of the pursuer for which a collision is unavoidable between at least one of the vehicle pairs. Different sizes for the BRTs on each slice show how the DNN can easily account for the parametrization of the value function by <var>&beta;<sub>L</sub></var>.
+    </p>
+
+    <p align='justify'>
+      
+    </p>
+
+
+    <table align=center width=900px>
+      <tr>
+          <td width=640px>
+            <center>
+              <a href="resources\images\multiveh_BRTv2.png"><img src ="resources\images\multiveh_BRTv2.png"></img></href></a><br>     
+          </center>
+          </td>
+        </tr>
+        <tr>
+      <td width=640px>
+        <center>
+          <p align='justify'> 
+            BRT slices for the position of the pursuer that results in a collision with either of the evaders, or force a collision between the evaders.
+          </p>
+      </td>
+      </tr>
+  </table>
+
+
+
+
+        <!--sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss -->
+
+
+      <hr>
+
+      <table align=center width=1100px>
+          <tr>
+              <td>
+                <left>
+          <center><h1>Acknowledgements</h1></center>
+          
+          <br>
+          <br>
+          This webpage template was borrowed from some <a href="https://richzhang.github.io/colorization/">colorful folks</a>.
+      </left>
+  </td>
+  </tr>
+  </table>
+
+  <br><br>
+</body>
+</html>
